@@ -6,7 +6,9 @@ TEMPLATE = app
 TARGET = 
 DEPENDPATH += .
 INCLUDEPATH += .
-LIBS += -ljson
+#LIBS += -ljson
+CONFIG += pkgconfig  link_pkgconfig
+PKGCONFIG += jsoncpp
 
 # Input
 HEADERS += addmonitorwidget.h \
