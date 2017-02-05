@@ -3,7 +3,7 @@
  *
  *       Filename:  ThreadPool.h
  *
- *    Description:  
+ *    Description:
  *
  *
  *        Version:  1.0
@@ -59,7 +59,7 @@ class ThreadPool
         }
 
         /* 添加任务 */
-        void AddTask(const Handler&hand)
+        void AddTask(const Handler & hand)
         {
             queue.Put(hand);
         }
