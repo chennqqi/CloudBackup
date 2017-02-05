@@ -13,7 +13,7 @@
 #include<cstdlib>
 #include<cerrno>
 #include<mysql/mysql.h>
-#include"jsoncpp-src-0.5.0/include/json/json.h"
+#include"json/json.h"
 #include<sstream>
 #include<stdio.h>
 
@@ -162,7 +162,7 @@ class MyDataBase {
                 stringSet.insert(str);
             }
             mysql_free_result(res);
-         
+
             if(stringSet.empty())
             {
                 return files;
@@ -239,7 +239,7 @@ class MyDataBase {
         int UploadFile(std::string MD5,std::string UserFilePath,int uid,std::string ServIp,std::string FileSize,int have)  {
             char     sqlbuf[1024];
             if( have == 1)
-            {  
+            {
                 sprintf(sqlbuf,"insert into UserFileInfo(Uid,UserFilePath,UserFileSize,ServerIp,MD5,Flag) values('%d','%s','%s','%s','%s','%d')",uid,UserFilePath.c_str(),FileSize.c_str(),ServIp.c_str(),MD5.c_str(),1);
                 mysql_real_query(&mysql,sqlbuf,strlen(sqlbuf));
                 memset(sqlbuf,'\0',sizeof(sqlbuf));

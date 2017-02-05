@@ -26,7 +26,7 @@
 #include<mutex>
 #include<condition_variable>
 #include<atomic>
-#include"jsoncpp-src-0.5.0/include/json/json.h"
+#include"json/json.h"
 #include"MyDataBase.cpp"
 
 //#define SIZE                1000
@@ -41,7 +41,7 @@ class Mission{
     public:
         Mission()
         {}
-        ~Mission() 
+        ~Mission()
         {
             std::cout<<"该任务销毁\n";
         }
