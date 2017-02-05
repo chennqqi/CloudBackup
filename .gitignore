@@ -1,0 +1,5 @@
+*.o
+*.bak
+Client/Makefile
+Client/moc_*.cpp
+Client/Client

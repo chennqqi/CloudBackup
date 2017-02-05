@@ -1,0 +1,3 @@
+[submodule "Server/qtscript"]
+	path = Server/qtscript
+	url = https://github.com/chennqqi/qtscript.git
