@@ -10,3 +10,7 @@ libmysqlclient
 #build 
 sudo yum install qt-devel jsoncpp-devel
 sudo yum install
+
+
+#WARNING!
+compile failed...
