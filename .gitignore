@@ -1,5 +1,5 @@
 *.o
 *.bak
-Client/Makefile
+Makefile
 Client/moc_*.cpp
 Client/Client
